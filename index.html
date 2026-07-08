@@ -10,200 +10,313 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Meta tags -->
     <meta name="keywords" content="幼儿教师网,幼儿教师招聘,幼儿教师招聘考试,幼儿教师编,幼儿教师编考试,幼儿特岗教师,幼儿特岗教师考试,幼儿教师进城考试,幼儿教师历年真题">
-    <meta name="description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试, 幼儿教师培训辅导教材, 幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息, 并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
+    <meta name="description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试，幼儿教师培训辅导教材，幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息，并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
     <!-- Open Graph -->
     <meta property="og:title" content="幼儿教师网,教师资格证考试,中小学幼儿教师招聘考试">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.yrjsw.com/">
-    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/6eb316e54e2179d3.png">
-    <meta property="og:description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试, 幼儿教师培训辅导教材, 幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息, 并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
+    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/2f1215fe1a5e2008.png">
+    <meta property="og:description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试，幼儿教师培训辅导教材，幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息，并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
     <meta property="og:site_name" content="幼儿教师网,教师资格证考试,中小学幼儿教师招聘考试">
     <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://apps.alyjs.com/traffic/4b8e85526eb316e54e2179d304bed7f5.js"></script>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
-            height: 100%;
-            margin: 0;
-            background: #fff;
-            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #FFF;
+            font-family: "Helvetica Neue","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
         }
-        .wrapper {
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
+        a { transition: color .2s; }
+
+        /* ---- NAVBAR ---- */
+        .navbar { margin-bottom: 0; border: none; border-radius: 0; }
+        .navbar-default {
+            background: #FFF;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 10px 0;
         }
-        .login-container {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+        .navbar-default .navbar-brand {
+            font-weight: 700; font-size: 20px; letter-spacing: 1px; color: #E84545;
         }
-        .login-box {
-            width: 100%;
-            max-width: 380px;
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus { color: #c23333; }
+        .navbar-default .navbar-nav>li>a {
+            color: #555; font-size: 14px;
         }
-        .login-logo {
+        .navbar-default .navbar-nav>li>a:hover,
+        .navbar-default .navbar-nav>li>a:focus { color: #E84545; background: transparent; }
+        .navbar-default .navbar-toggle { border-color: #eee; }
+        .navbar-default .navbar-toggle .icon-bar { background: #E84545; }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus { background: #fef5f5; }
+
+        /* ---- HERO ---- */
+        .hero {
+            padding: 100px 0 80px;
             text-align: center;
-            margin-bottom: 32px;
+            background: linear-gradient(180deg, #FFF 0%, #FFF5F5 50%, #FFF 100%);
         }
-        .login-logo .fa-stack {
-            color: #7ec8e3;
+        .hero h1 {
+            font-size: 38px; font-weight: 700; color: #222; margin-bottom: 16px; letter-spacing: 2px;
         }
-        .login-logo h2 {
-            font-size: 20px;
-            font-weight: 400;
-            color: #555;
-            margin-top: 10px;
-            letter-spacing: 2px;
+        .hero h1 span {
+            background: linear-gradient(135deg, #E84545, #F5A0A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .login-logo .subtitle {
-            font-size: 13px;
-            color: #aaa;
-            margin-top: 4px;
-            letter-spacing: 1px;
+        .hero p {
+            font-size: 16px; color: #999; max-width: 500px; margin: 0 auto 36px; line-height: 1.8;
         }
-        .form-group {
-            margin-bottom: 18px;
-            position: relative;
-        }
-        .form-group .input-icon {
-            position: absolute;
-            left: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #bbb;
-            z-index: 10;
-            font-size: 15px;
-        }
-        .form-control {
-            height: 46px;
-            border-radius: 23px;
-            border: 1px solid #e0e0e0;
-            padding-left: 42px;
-            padding-right: 16px;
-            font-size: 14px;
-            box-shadow: none;
-            background: #fafafa;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .form-control:focus {
-            border-color: #7ec8e3;
-            box-shadow: 0 0 0 3px rgba(126, 200, 227, 0.15);
-            background: #fff;
-        }
-        .btn-login {
-            width: 100%;
-            height: 46px;
-            border-radius: 23px;
-            background: #7ec8e3;
-            border: none;
-            color: #fff;
-            font-size: 15px;
-            letter-spacing: 3px;
-            transition: background 0.3s, box-shadow 0.3s;
-            margin-top: 6px;
-        }
-        .btn-login:hover,
-        .btn-login:focus {
-            background: #5eb8d6;
-            color: #fff;
-            outline: none;
-            box-shadow: 0 4px 12px rgba(126, 200, 227, 0.35);
-        }
-        .btn-login:active {
-            background: #4aa8c8;
-        }
-        .login-extra {
-            text-align: center;
-            margin-top: 18px;
-        }
-        .login-extra a {
-            font-size: 13px;
-            color: #aaa;
+        .btn-red {
+            display: inline-block;
+            padding: 13px 44px;
+            font-size: 15px; font-weight: 600;
+            border-radius: 50px;
+            color: #FFF;
+            background: linear-gradient(135deg, #E84545, #F08A8A);
             text-decoration: none;
-            transition: color 0.3s;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 20px rgba(232,69,69,.3);
+            transition: all .3s ease;
         }
-        .login-extra a:hover {
-            color: #7ec8e3;
+        .btn-red:hover, .btn-red:focus {
+            color: #FFF; text-decoration: none;
+            box-shadow: 0 6px 28px rgba(232,69,69,.4);
+            transform: translateY(-1px);
         }
+
+        /* ---- SECTION ---- */
+        .section { padding: 60px 0; }
+        .section-head { text-align: center; margin-bottom: 44px; }
+        .section-head h2 {
+            font-size: 26px; font-weight: 700; color: #222; margin-bottom: 6px;
+        }
+        .section-head .line {
+            display: inline-block; width: 40px; height: 3px;
+            background: linear-gradient(90deg, #E84545, #F5A0A0); border-radius: 2px;
+        }
+        .section-head .sub {
+            color: #aaa; font-size: 14px; margin-top: 8px;
+        }
+
+        /* ---- FEATURE CARD ---- */
+        .f-card {
+            text-align: center; padding: 34px 20px; margin-bottom: 24px;
+        }
+        .f-card .icon-circle {
+            display: inline-block;
+            width: 60px; height: 60px; line-height: 60px; border-radius: 50%;
+            background: linear-gradient(135deg, #E84545, #F5A0A0);
+            color: #FFF; font-size: 22px; margin-bottom: 18px;
+            box-shadow: 0 6px 22px rgba(232,69,69,.15);
+        }
+        .f-card h4 { font-weight: 700; font-size: 16px; margin-bottom: 8px; color: #333; }
+        .f-card p { color: #999; font-size: 14px; line-height: 1.7; max-width: 240px; margin: 0 auto; }
+
+        /* ---- TOPIC ---- */
+        .topic {
+            text-align: center;
+            padding: 28px 12px 22px;
+            margin-bottom: 20px;
+        }
+        .topic .fa {
+            font-size: 28px;
+            background: linear-gradient(135deg, #E84545, #F5A0A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .topic h5 { font-weight: 700; font-size: 15px; color: #444; margin-bottom: 4px; }
+        .topic span { font-size: 12px; color: #bbb; }
+
+        /* ---- JOIN ---- */
+        .join {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #FFF5F5, #FFF);
+        }
+        .join h2 { font-size: 26px; font-weight: 700; color: #222; margin-bottom: 12px; }
+        .join p { color: #999; font-size: 15px; margin-bottom: 30px; line-height: 1.8; }
+        .qr-box {
+            display: inline-block;
+            background: #FFF;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #f1f1f1;
+            margin-bottom: 20px;
+        }
+        .qr-placeholder {
+            width: 150px; height: 150px;
+            background: #fafafa;
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 12px; color: #ccc;
+        }
+
+        /* ---- FOOTER ---- */
         .footer {
             text-align: center;
-            padding: 16px 10px;
+            padding: 18px 0;
             font-size: 12px;
-            color: #ccc;
-            letter-spacing: 0.5px;
+            color: #bbb;
+            border-top: 1px solid #f4f4f4;
         }
-        .footer a {
-            color: #ccc;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            color: #aaa;
+        .footer a { color: #bbb; text-decoration: none; }
+        .footer a:hover { color: #E84545; }
+        .footer span.sep { margin: 0 8px; color: #ddd; }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 768px) {
+            .hero { padding: 70px 0 50px; }
+            .hero h1 { font-size: 27px; }
+            .hero p { font-size: 15px; }
+            .section { padding: 46px 0; }
+            .section-head h2 { font-size: 22px; }
+            .btn-red { padding: 11px 34px; font-size: 14px; }
+            .navbar-default .navbar-brand { font-size: 17px; }
         }
         @media (max-width: 480px) {
-            .login-box {
-                max-width: 100%;
-                padding: 0 10px;
-            }
-            .login-logo h2 {
-                font-size: 18px;
-            }
-            .form-control {
-                height: 42px;
-                font-size: 13px;
-            }
-            .btn-login {
-                height: 42px;
-                font-size: 14px;
-            }
+            .hero { padding: 54px 0 40px; }
+            .hero h1 { font-size: 22px; }
+            .hero p { font-size: 14px; }
+            .section-head h2 { font-size: 20px; }
+            .f-card h4 { font-size: 15px; }
+            .btn-red { padding: 10px 28px; font-size: 13px; }
+            .topic { padding: 20px 6px 16px; }
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="login-container">
-            <div class="login-box">
-                <!-- Logo -->
-                <div class="login-logo">
-                    <span class="fa-stack fa-3x">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-child fa-stack-1x"></i>
-                    </span>
-                    <h2>幼儿教师网</h2>
-                    <div class="subtitle">幼儿教师 企业微信群 管理系统</div>
-                </div>
 
-                <!-- Form -->
-                <form>
-                    <div class="form-group">
-                        <span class="input-icon"><i class="fa fa-envelope-o"></i></span>
-                        <input type="email" class="form-control" placeholder="员工编号" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon"><i class="fa fa-lock"></i></span>
-                        <input type="password" class="form-control" placeholder="密码" autocomplete="off">
-                    </div>
-                    <button type="submit" class="btn btn-login">登 录</button>
-                </form>
-
-                <!-- Extra Links -->
-                <!--<div class="login-extra">
-                    <a href="#">忘记密码？</a>
-                    <span style="color:#ddd;margin:0 10px;">|</span>
-                    <a href="#">注册账号</a>
-                </div>-->
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-child"></i> 幼儿教师网</a>
         </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备2025189343号-13</a>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#features">群特色</a></li>
+                <li><a href="#topics">分享话题</a></li>
+                <li><a href="#join">加入我们</a></li>
+            </ul>
         </div>
     </div>
-</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>幼师学习 · 工作 <span>分享搭子群</span></h1>
+        <p>一群热爱幼教事业的搭子们，在这里交流教学心得、共享工作资源、互相陪伴成长。</p>
+        <a href="#join" class="btn-red"><i class="fa fa-wechat"></i> 马上加入</a>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+    <div class="container">
+        <div class="section-head">
+            <h2>群特色</h2>
+            <div class="line"></div>
+            <p class="sub">和志同道合的幼师搭子，做有意义的事</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="f-card">
+                    <div class="icon-circle"><i class="fa fa-book"></i></div>
+                    <h4>教学经验共享</h4>
+                    <p>优秀教案、课堂技巧、环创灵感，群友互相分享，少走弯路。</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="f-card">
+                    <div class="icon-circle"><i class="fa fa-briefcase"></i></div>
+                    <h4>工作信息互通</h4>
+                    <p>招聘信息、考证指南、行业动态，第一时间同步，不再错过机会。</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="f-card">
+                    <div class="icon-circle"><i class="fa fa-smile-o"></i></div>
+                    <h4>情感陪伴支持</h4>
+                    <p>带班的酸甜苦辣，有人懂你。暖心的树洞，真诚的鼓励。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TOPICS -->
+<section class="section" id="topics" style="background:#FFFAFA;">
+    <div class="container">
+        <div class="section-head">
+            <h2>分享话题</h2>
+            <div class="line"></div>
+            <p class="sub">每天都有新鲜话题，总有你感兴趣的</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-paint-brush"></i><h5>环创设计</h5><span>区角布置 · 主题墙</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-music"></i><h5>律动儿歌</h5><span>手指谣 · 晨圈活动</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-cutlery"></i><h5>膳食搭配</h5><span>食谱分享 · 营养科普</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-file-text-o"></i><h5>教案资源</h5><span>五大领域 · 公开课</span></div></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-graduation-cap"></i><h5>考证交流</h5><span>教资 · 普通话 · 保育员</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-child"></i><h5>家园共育</h5><span>家长沟通 · 亲子活动</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-plane"></i><h5>假期出游</h5><span>团建推荐 · 旅行攻略</span></div></div>
+            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-ellipsis-h"></i><h5>更多话题</h5><span>收纳 · 穿搭 · 吐槽</span></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- JOIN -->
+<section class="join" id="join">
+    <div class="container">
+        <h2>期待你的加入</h2>
+        <p>扫描二维码添加群主微信，备注"幼师搭子"，拉你进群。<br>一起学习，一起成长，做彼此最暖的搭子。</p>
+        <div class="qr-box">
+            <div class="qr-placeholder">二维码占位</div>
+        </div>
+        <div>
+            <a href="#" class="btn-red"><i class="fa fa-wechat"></i> 扫码加群主微信</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鲁ICP备2025189343号-13</a>
+        <span class="sep">|</span>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank" rel="noopener">鲁公网安备37130202372909号</a>
+    </div>
+</footer>
+
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+    $('a[href*="#"]:not([href="#"])').click(function(){
+        var t = $(this.hash);
+        if(t.length){
+            $('html,body').animate({scrollTop:t.offset().top-60},500);
+            $('.navbar-collapse').collapse('hide');
+            return false;
+        }
+    });
+});
+</script>
+
 </body>
 </html>
