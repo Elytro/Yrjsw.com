@@ -13,310 +13,558 @@
     <meta name="description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试，幼儿教师培训辅导教材，幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息，并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
     <!-- Open Graph -->
     <meta property="og:title" content="幼儿教师网,教师资格证考试,中小学幼儿教师招聘考试">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="WebSite">
     <meta property="og:url" content="https://www.yrjsw.com/">
-    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/2f1215fe1a5e2008.png">
+    <meta property="og:image" content="https://apps.xinue.com/esign/2f1215fe1a5e2008.png">
     <meta property="og:description" content="幼儿教师网(www.yrjsw.com)提供2025年幼儿教师招聘考试，幼儿教师培训辅导教材，幼儿特岗教师招聘考试等内容。分享幼儿教师招聘报名时间、报名入口、考题题库及解答、成绩查询、面试名单等考试信息，并开设幼儿、特岗教师教师、教师资格证考试培训辅导课程。">
     <meta property="og:site_name" content="幼儿教师网,教师资格证考试,中小学幼儿教师招聘考试">
+    <script src="https://apps.xiaei.com/alyis/8fb411101cacf940.js"></script>
     <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body {
-            background: #FFF;
-            font-family: "Helvetica Neue","PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
-            color: #333;
-            -webkit-font-smoothing: antialiased;
+      :root {
+        --primary: #16a085;
+        --primary-dark: #0d6b58;
+        --primary-light: #1abc9c;
+        --bg-light: #f4fcfa;
+        --border-light: #e0f5f0;
+        --hover-bg: rgba(22, 160, 133, 0.08);
+        --footer-from: #0a1d18;
+        --footer-to: #05100c;
+      }
+      body {
+        font-family:
+          "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #333;
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: var(--primary);
+      }
+      a:hover {
+        color: var(--primary-dark);
+        text-decoration: none;
+      }
+      .navbar-minimal {
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid var(--border-light);
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      .navbar-minimal .navbar-brand {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary);
+        letter-spacing: 1px;
+      }
+      .navbar-minimal .navbar-nav > li > a {
+        color: #888;
+        font-size: 14px;
+        padding: 20px 18px;
+        transition: color 0.2s;
+      }
+      .navbar-minimal .navbar-nav > li > a:hover {
+        color: var(--primary);
+        background: transparent;
+      }
+      .banner {
+        background: linear-gradient(
+          135deg,
+          var(--primary-light) 0%,
+          var(--primary) 40%,
+          var(--primary-dark) 100%
+        );
+        color: #fff;
+        padding: 100px 0 80px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .banner::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+          radial-gradient(
+            ellipse at 30% 20%,
+            rgba(255, 255, 255, 0.08) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse at 70% 80%,
+            rgba(255, 255, 255, 0.05) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+      .banner h1 {
+        font-size: 38px;
+        font-weight: 300;
+        letter-spacing: 6px;
+        margin-bottom: 18px;
+        position: relative;
+      }
+      .banner .banner-desc {
+        font-size: 15px;
+        opacity: 0.85;
+        line-height: 2;
+        max-width: 560px;
+        margin: 0 auto 28px;
+        position: relative;
+      }
+      .banner .banner-links {
+        position: relative;
+      }
+      .banner .banner-links a {
+        display: inline-block;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 8px 28px;
+        border-radius: 30px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+        margin: 0 6px;
+      }
+      .banner .banner-links a:hover {
+        background: #fff;
+        color: var(--primary);
+        border-color: #fff;
+      }
+      .banner-wave {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        clip-path: ellipse(55% 100% at 50% 100%);
+      }
+      .section {
+        padding: 70px 0;
+      }
+      .section-bg {
+        background: var(--bg-light);
+      }
+      .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .section-header h2 {
+        font-size: 26px;
+        font-weight: 400;
+        color: #222;
+        margin: 0 0 12px;
+        letter-spacing: 2px;
+      }
+      .section-header .divider {
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--primary-light),
+          var(--primary)
+        );
+        margin: 0 auto;
+        border-radius: 2px;
+      }
+      .about-text {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 2;
+        color: #777;
+      }
+      .about-features {
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      .about-feature-item {
+        text-align: center;
+        width: 160px;
+        padding: 28px 10px;
+        background: #fff;
+        border-radius: 8px;
+        transition: all 0.3s;
+      }
+      .about-feature-item:hover {
+        box-shadow: 0 4px 20px var(--hover-bg);
+        transform: translateY(-2px);
+      }
+      .about-feature-item .feature-icon {
+        font-size: 32px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light),
+          var(--primary)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 10px;
+      }
+      .about-feature-item .feature-label {
+        font-size: 13px;
+        color: #999;
+      }
+      .company-table {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .company-table td {
+        padding: 10px 0;
+        font-size: 14px;
+        color: #777;
+        line-height: 1.8;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .company-table td:first-child {
+        color: var(--primary);
+        width: 110px;
+        white-space: nowrap;
+        font-weight: 500;
+      }
+      .metrics-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .metric-item {
+        text-align: center;
+        padding: 30px 45px;
+        min-width: 190px;
+        position: relative;
+      }
+      .metric-item::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 20%;
+        height: 60%;
+        width: 1px;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          #b8e8d8,
+          transparent
+        );
+      }
+      .metric-item:last-child::after {
+        display: none;
+      }
+      .metric-item .metric-num {
+        font-size: 44px;
+        font-weight: 300;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light),
+          var(--primary)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 1px;
+      }
+      .metric-item .metric-unit {
+        font-size: 20px;
+        font-weight: 300;
+        color: #80d4b8;
+      }
+      .metric-item .metric-label {
+        font-size: 13px;
+        color: #bbb;
+        margin-top: 6px;
+      }
+      .qual-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      .qual-item {
+        text-align: center;
+        width: 230px;
+        padding: 30px 18px;
+        background: #fff;
+        border-radius: 8px;
+        border: 1px solid var(--border-light);
+        transition: all 0.3s;
+      }
+      .qual-item:hover {
+        border-color: #b0e0d0;
+        box-shadow: 0 2px 16px var(--hover-bg);
+      }
+      .qual-item .qual-icon {
+        font-size: 34px;
+        color: var(--primary);
+        margin-bottom: 14px;
+      }
+      .qual-item .qual-title {
+        font-size: 14px;
+        color: #555;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      .qual-item .qual-desc {
+        font-size: 12px;
+        color: #bbb;
+        line-height: 1.7;
+      }
+      .report-section {
+        text-align: center;
+        color: #bbb;
+        font-size: 13px;
+        padding: 40px 0 50px;
+      }
+      .report-section a {
+        color: var(--primary);
+      }
+      .footer {
+        background: linear-gradient(
+          135deg,
+          var(--footer-from) 0%,
+          var(--footer-to) 100%
+        );
+        padding: 30px 0;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 12px;
+        line-height: 2.2;
+      }
+      .footer a {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .footer a:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .footer .sep {
+        margin: 0 10px;
+        color: rgba(255, 255, 255, 0.2);
+      }
+      @media (max-width: 767px) {
+        .banner {
+          padding: 70px 0 60px;
         }
-        a { transition: color .2s; }
-
-        /* ---- NAVBAR ---- */
-        .navbar { margin-bottom: 0; border: none; border-radius: 0; }
-        .navbar-default {
-            background: #FFF;
-            border-bottom: 1px solid #f0f0f0;
-            padding: 10px 0;
+        .banner h1 {
+          font-size: 26px;
+          letter-spacing: 3px;
         }
-        .navbar-default .navbar-brand {
-            font-weight: 700; font-size: 20px; letter-spacing: 1px; color: #E84545;
+        .section {
+          padding: 45px 0;
         }
-        .navbar-default .navbar-brand:hover,
-        .navbar-default .navbar-brand:focus { color: #c23333; }
-        .navbar-default .navbar-nav>li>a {
-            color: #555; font-size: 14px;
+        .metric-item {
+          padding: 20px 15px;
+          min-width: 46%;
         }
-        .navbar-default .navbar-nav>li>a:hover,
-        .navbar-default .navbar-nav>li>a:focus { color: #E84545; background: transparent; }
-        .navbar-default .navbar-toggle { border-color: #eee; }
-        .navbar-default .navbar-toggle .icon-bar { background: #E84545; }
-        .navbar-default .navbar-toggle:hover,
-        .navbar-default .navbar-toggle:focus { background: #fef5f5; }
-
-        /* ---- HERO ---- */
-        .hero {
-            padding: 100px 0 80px;
-            text-align: center;
-            background: linear-gradient(180deg, #FFF 0%, #FFF5F5 50%, #FFF 100%);
+        .metric-item::after {
+          display: none;
         }
-        .hero h1 {
-            font-size: 38px; font-weight: 700; color: #222; margin-bottom: 16px; letter-spacing: 2px;
+        .metric-item .metric-num {
+          font-size: 32px;
         }
-        .hero h1 span {
-            background: linear-gradient(135deg, #E84545, #F5A0A0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .qual-grid {
+          gap: 15px;
         }
-        .hero p {
-            font-size: 16px; color: #999; max-width: 500px; margin: 0 auto 36px; line-height: 1.8;
+        .qual-item {
+          width: 44%;
+          padding: 20px 10px;
         }
-        .btn-red {
-            display: inline-block;
-            padding: 13px 44px;
-            font-size: 15px; font-weight: 600;
-            border-radius: 50px;
-            color: #FFF;
-            background: linear-gradient(135deg, #E84545, #F08A8A);
-            text-decoration: none;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 20px rgba(232,69,69,.3);
-            transition: all .3s ease;
+        .about-feature-item {
+          width: 44%;
         }
-        .btn-red:hover, .btn-red:focus {
-            color: #FFF; text-decoration: none;
-            box-shadow: 0 6px 28px rgba(232,69,69,.4);
-            transform: translateY(-1px);
-        }
-
-        /* ---- SECTION ---- */
-        .section { padding: 60px 0; }
-        .section-head { text-align: center; margin-bottom: 44px; }
-        .section-head h2 {
-            font-size: 26px; font-weight: 700; color: #222; margin-bottom: 6px;
-        }
-        .section-head .line {
-            display: inline-block; width: 40px; height: 3px;
-            background: linear-gradient(90deg, #E84545, #F5A0A0); border-radius: 2px;
-        }
-        .section-head .sub {
-            color: #aaa; font-size: 14px; margin-top: 8px;
-        }
-
-        /* ---- FEATURE CARD ---- */
-        .f-card {
-            text-align: center; padding: 34px 20px; margin-bottom: 24px;
-        }
-        .f-card .icon-circle {
-            display: inline-block;
-            width: 60px; height: 60px; line-height: 60px; border-radius: 50%;
-            background: linear-gradient(135deg, #E84545, #F5A0A0);
-            color: #FFF; font-size: 22px; margin-bottom: 18px;
-            box-shadow: 0 6px 22px rgba(232,69,69,.15);
-        }
-        .f-card h4 { font-weight: 700; font-size: 16px; margin-bottom: 8px; color: #333; }
-        .f-card p { color: #999; font-size: 14px; line-height: 1.7; max-width: 240px; margin: 0 auto; }
-
-        /* ---- TOPIC ---- */
-        .topic {
-            text-align: center;
-            padding: 28px 12px 22px;
-            margin-bottom: 20px;
-        }
-        .topic .fa {
-            font-size: 28px;
-            background: linear-gradient(135deg, #E84545, #F5A0A0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
-        }
-        .topic h5 { font-weight: 700; font-size: 15px; color: #444; margin-bottom: 4px; }
-        .topic span { font-size: 12px; color: #bbb; }
-
-        /* ---- JOIN ---- */
-        .join {
-            padding: 60px 0;
-            text-align: center;
-            background: linear-gradient(135deg, #FFF5F5, #FFF);
-        }
-        .join h2 { font-size: 26px; font-weight: 700; color: #222; margin-bottom: 12px; }
-        .join p { color: #999; font-size: 15px; margin-bottom: 30px; line-height: 1.8; }
-        .qr-box {
-            display: inline-block;
-            background: #FFF;
-            padding: 16px;
-            border-radius: 12px;
-            border: 1px solid #f1f1f1;
-            margin-bottom: 20px;
-        }
-        .qr-placeholder {
-            width: 150px; height: 150px;
-            background: #fafafa;
-            border-radius: 6px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 12px; color: #ccc;
-        }
-
-        /* ---- FOOTER ---- */
-        .footer {
-            text-align: center;
-            padding: 18px 0;
-            font-size: 12px;
-            color: #bbb;
-            border-top: 1px solid #f4f4f4;
-        }
-        .footer a { color: #bbb; text-decoration: none; }
-        .footer a:hover { color: #E84545; }
-        .footer span.sep { margin: 0 8px; color: #ddd; }
-
-        /* ---- RESPONSIVE ---- */
-        @media (max-width: 768px) {
-            .hero { padding: 70px 0 50px; }
-            .hero h1 { font-size: 27px; }
-            .hero p { font-size: 15px; }
-            .section { padding: 46px 0; }
-            .section-head h2 { font-size: 22px; }
-            .btn-red { padding: 11px 34px; font-size: 14px; }
-            .navbar-default .navbar-brand { font-size: 17px; }
-        }
-        @media (max-width: 480px) {
-            .hero { padding: 54px 0 40px; }
-            .hero h1 { font-size: 22px; }
-            .hero p { font-size: 14px; }
-            .section-head h2 { font-size: 20px; }
-            .f-card h4 { font-size: 15px; }
-            .btn-red { padding: 10px 28px; font-size: 13px; }
-            .topic { padding: 20px 6px 16px; }
-        }
+      }
     </style>
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-default">
-    <div class="container">
+  </head>
+  <body>
+    <nav class="navbar navbar-minimal">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
-                <span class="sr-only">导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-child"></i> 幼儿教师网</a>
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="sr-only">导航</span><span class="icon-bar"></span
+            ><span class="icon-bar"></span
+            ><span class="icon-bar"></span></button
+          ><a class="navbar-brand" href="#">Yrjsw.com</a>
         </div>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#features">群特色</a></li>
-                <li><a href="#topics">分享话题</a></li>
-                <li><a href="#join">加入我们</a></li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#data">平台数据</a></li>
+            <li><a href="#honor">资质荣誉</a></li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+    <section class="banner">
+      <div class="container">
+        <h1>Yrjsw.com</h1>
+        <p class="banner-desc">
+          您正在访问域名为梦颖网络中心业务域名，用于承载工作室的数据接口服务。<br />
+        </p>
+        <div class="banner-links">
+          <a href="https://dcp.yrjsw.com" target="_blank"
+            ><i class="fa fa-globe"></i> 联系我们</a
+          >
+          <a href="javascript:;"><i class="fa fa-weixin"></i> 幼儿教师网</a>
+        </div>
+      </div>
+      <div class="banner-wave"></div>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>幼师学习 · 工作 <span>分享搭子群</span></h1>
-        <p>一群热爱幼教事业的搭子们，在这里交流教学心得、共享工作资源、互相陪伴成长。</p>
-        <a href="#join" class="btn-red"><i class="fa fa-wechat"></i> 马上加入</a>
-    </div>
-</section>
-
-<!-- FEATURES -->
-<section class="section" id="features">
-    <div class="container">
-        <div class="section-head">
-            <h2>群特色</h2>
-            <div class="line"></div>
-            <p class="sub">和志同道合的幼师搭子，做有意义的事</p>
+    <!-- 关于我们 -->
+    <section id="about" class="section section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>关于我们</h2>
+          <div class="divider"></div>
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="f-card">
-                    <div class="icon-circle"><i class="fa fa-book"></i></div>
-                    <h4>教学经验共享</h4>
-                    <p>优秀教案、课堂技巧、环创灵感，群友互相分享，少走弯路。</p>
-                </div>
+        <div class="about-text text-center">
+          <p>
+            幼儿教师网是以企业微信群为入口的无代码平台，<br />
+            为您提供丰富的免费Api数据接口服务。<br />
+            平台提供标准化功能模块，用户可灵活组合搭建业务系统，覆盖多场景需求。
+          </p>
+        </div>
+        <div class="about-features">
+          <div class="about-feature-item">
+            <div class="feature-icon"><i class="fa fa-paint-brush"></i></div>
+            <div class="feature-label">企业微信群</div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon"><i class="fa fa-download"></i></div>
+            <div class="feature-label">微信公众号</div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon"><i class="fa fa-check-circle-o"></i></div>
+            <div class="feature-label">微信小程序</div>
+          </div>
+          <div class="about-feature-item">
+            <div class="feature-icon"><i class="fa fa-cubes"></i></div>
+            <div class="feature-label">抖音开放平台</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 公司主体 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>公司主体</h2>
+          <div class="divider"></div>
+        </div>
+        <table class="company-table">
+          <tr>
+            <td>运营实体</td>
+            <td>兰山区梦颖网络中心</td>
+          </tr>
+          <tr>
+            <td>成立时间</td>
+            <td>2023年</td>
+          </tr>
+          <tr>
+            <td>经营范围</td>
+            <td>电子商务、广告代理服务、网络技术服务、计算机软件相关服务；</td>
+          </tr>
+          <tr>
+            <td>知识产权</td>
+            <td>商标证书、计算机专利著作权</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- 核心数据 -->
+    <section id="data" class="section section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>平台数据</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="metrics-row">
+          <div class="metric-item">
+            <div class="metric-num">
+              1,500<span class="metric-unit">万+</span>
             </div>
-            <div class="col-sm-4">
-                <div class="f-card">
-                    <div class="icon-circle"><i class="fa fa-briefcase"></i></div>
-                    <h4>工作信息互通</h4>
-                    <p>招聘信息、考证指南、行业动态，第一时间同步，不再错过机会。</p>
-                </div>
+            <div class="metric-label">注册用户数</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">5.7<span class="metric-unit">亿</span></div>
+            <div class="metric-label">公众号用户量</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">13<span class="metric-unit">亿+</span></div>
+            <div class="metric-label">累计下载量</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">
+              6,500<span class="metric-unit">亿+</span>
             </div>
-            <div class="col-sm-4">
-                <div class="f-card">
-                    <div class="icon-circle"><i class="fa fa-smile-o"></i></div>
-                    <h4>情感陪伴支持</h4>
-                    <p>带班的酸甜苦辣，有人懂你。暖心的树洞，真诚的鼓励。</p>
-                </div>
-            </div>
+            <div class="metric-label">过去一个月请求</div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- TOPICS -->
-<section class="section" id="topics" style="background:#FFFAFA;">
-    <div class="container">
-        <div class="section-head">
-            <h2>分享话题</h2>
-            <div class="line"></div>
-            <p class="sub">每天都有新鲜话题，总有你感兴趣的</p>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-paint-brush"></i><h5>环创设计</h5><span>区角布置 · 主题墙</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-music"></i><h5>律动儿歌</h5><span>手指谣 · 晨圈活动</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-cutlery"></i><h5>膳食搭配</h5><span>食谱分享 · 营养科普</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-file-text-o"></i><h5>教案资源</h5><span>五大领域 · 公开课</span></div></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-graduation-cap"></i><h5>考证交流</h5><span>教资 · 普通话 · 保育员</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-child"></i><h5>家园共育</h5><span>家长沟通 · 亲子活动</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-plane"></i><h5>假期出游</h5><span>团建推荐 · 旅行攻略</span></div></div>
-            <div class="col-sm-3 col-xs-6"><div class="topic"><i class="fa fa-ellipsis-h"></i><h5>更多话题</h5><span>收纳 · 穿搭 · 吐槽</span></div></div>
-        </div>
-    </div>
-</section>
+    <!-- 违规内容举报 -->
+    <section class="report-section section-bg">
+      <div class="container">
+        <p>
+          <i class="fa fa-exclamation-triangle"></i>
+          如发现违法违规内容，请通过以下链接进行投诉举报：
+          <a href="https://tousu.yrjsw.com/" target="_blank"
+            >https://ts.yrjsw.com/</a
+          >
+          &nbsp;&nbsp;我们将对违法违规内容采取断开链接、封停账号等措施。
+        </p>
+      </div>
+    </section>
 
-<!-- JOIN -->
-<section class="join" id="join">
-    <div class="container">
-        <h2>期待你的加入</h2>
-        <p>扫描二维码添加群主微信，备注"幼师搭子"，拉你进群。<br>一起学习，一起成长，做彼此最暖的搭子。</p>
-        <div class="qr-box">
-            <div class="qr-placeholder">二维码占位</div>
-        </div>
-        <div>
-            <a href="#" class="btn-red"><i class="fa fa-wechat"></i> 扫码加群主微信</a>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container">
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鲁ICP备2025189343号-13</a>
-        <span class="sep">|</span>
-        <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank" rel="noopener">鲁公网安备37130202372909号</a>
-    </div>
-</footer>
-
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script>
-$(function(){
-    $('a[href*="#"]:not([href="#"])').click(function(){
-        var t = $(this.hash);
-        if(t.length){
-            $('html,body').animate({scrollTop:t.offset().top-60},500);
-            $('.navbar-collapse').collapse('hide');
-            return false;
-        }
-    });
-});
-</script>
-
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023–2026 Yrjsw.com 兰山区梦颖网络中心 版权所有</p>
+        <p>
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"
+            >鲁ICP备2025189343号-13</a
+          ><span class="sep">|</span
+          ><a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo"
+            target="_blank"
+            rel="nofollow"
+            ><i class="fa fa-shield"></i> 鲁公网安备37131202371948号</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+      // 浏览器访问时动态更改标题
+      document.title = "兰山区梦颖网络中心";
+      $('a[href^="#"]').on("click", function (e) {
+        var t = $(this.getAttribute("href"));
+        t.length &&
+          (e.preventDefault(),
+          $("html,body")
+            .stop()
+            .animate({ scrollTop: t.offset().top - 60 }, 500));
+      });
+      $(".navbar-nav a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
+  </body>
 </html>
